@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+header {
+    background: #111;
+    padding: 10px 0;
+}
+
+header .header_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+header .header_wrapper .logo a {
+    display: block;
+}
+
+header .header_wrapper .logo a img {
+    width: 100px;
+    display: block;
+}
+
+
+
+.menu ul {
+    display: flex;
+    
+}
+.menu ul li {
+    margin-left: 5px;
+}
+.menu ul li a {
+	display: block;
+	color: #fff;
+	padding: 0 18px;
+	text-transform: capitalize;
+	position: relative;
+    transition: 0.5s;
+}
+.menu ul li a::before{
+    content: ''; 
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    bottom: -11px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu ul li:hover a::before{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.body_area{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.body_left {
+	width: 80%;
+    padding: 30px;
+}
+.body_box_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.body_left_box{
+    width: 30%;
+    border: 1px solid #4ba54b;
+    height: 300px;
+}
+.body_left_box .box_content{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+}
+.body_right{
+    width: 19%;
+    background-color: rgb(161, 157, 157);
+    border-left: 2px solid red;
+
+}
+.box {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+}
+.box_2{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box_3 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+
+.body_box_meddile {
+	margin: 20px 0;
+}
+.body_text{
+    display: flex;
+    justify-content: space-between;
+}
+.body_text_box{
+    width: 400px !important;
+}
+.body_text_box_2{
+    width: 42%;
+}
+.text{
+    padding: 30px;
+    height: 250px;
+    border: 1px solid #4ba54b;
+}
+.body_bottom_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.body_bottom_box{
+    width: 30%;
+    border: 1px solid #4ba54b;
+    padding: 30px;
+    height: 213px;
+}
+.body_bottom_box ul{
+    display: flex;
+    justify-content: space-around;
+}
+.body_bottom_box ul li{
+    width: 50px;
+    background-color: red;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid green;
+}
+.bottom_2 ul{
+    flex-wrap: wrap;
+    justify-content: flex-start;   
+}
+.bottom_2 ul li{
+    margin: 0;
+}
+
+.body_bottom_start{
+    display: flex;  
+
+}
+.body_bottom_start h4 {
+	width: 130px;
+	background-color: red;
+	padding: 10px;
+	color: #fff;
+	text-transform: capitalize;
+    text-align: center;
+    border: 2px solid green;
+}
+.body_bottom_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.body_bottom_center h4{
+    width: 130px;
+	background-color: red;
+	padding: 10px;
+	color: #fff;
+	text-transform: capitalize;
+    border: 2px solid green;
+
+}
+.body_bottom_bottm{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.body_bottom_bottm h4{
+    width: 130px;
+	background-color: red;
+	padding: 10px;
+	color: #fff;
+	text-transform: capitalize;
+    border: 2px solid green;
+}
+.margin{
+    margin: 8px;
+}
+
+footer{
+    background-color: #111;
+    padding: 20px 0;
+}
+.footer_menu{
+    text-align: center;
+}
+.footer_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_menu ul li{
+    margin: 0 10px;
+}
+.footer_menu ul li a{
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+}
+.footer_menu ul li a::before{
+    content: ''; 
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    bottom: -11px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.footer_menu ul li:hover a::before{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.side_bar{
+    padding: 0 20px;
+}
+.side_bar h1{
+    padding: 30px 0;
+    font-size: 32px;
+    text-transform: capitalize;
+}
